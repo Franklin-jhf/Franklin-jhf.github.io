@@ -4,6 +4,7 @@
 
 body {
     margin: 0px;
+    height: 100vh;
 }
 
 /* body */
@@ -16,17 +17,49 @@ body {
 }
 
 #nav-links {
+    display: block;
     width: 100%;
-    margin-top: 10px;
     max-height: 30px;
+    clear: both;
+    padding: 0px;
+    margin-top: 50px;
+}
+
+h2 {
+    padding-left: 20px;
+    margin: 0px;
+}
+
+.last-name-style {
+    float: right;
+    padding-right: 15px;
+    padding-top: 5px;
 }
 
 li {
-    float: right;
-    padding: 5px 15px;
-    margin: 0px 5px;
-    background-color:dodgerblue;
-    border-radius: 3px;
+    padding: 5px 5px;
+    margin: auto;
+    border-radius: 7px;
+    border: 0px none;
+    list-style-type: none;
+    text-align: center;
+    width: 100px;   
+}
+
+ul li:nth-child(1) {
+    background-color: aquamarine;
+}
+
+ul li:nth-child(2) {
+    background-color: #50edff;
+}
+
+ul li:nth-child(3) {
+    background-color: #fffb7d;
+}
+
+ul li:nth-child(4) {
+    background-color: #ff8582;
 }
 
 li:hover {
@@ -42,8 +75,6 @@ li a:hover {
 }
 
 #contact {
-    float: left;
-    margin-left: 20px;
 }
 
 #nav-text {
@@ -52,12 +83,11 @@ li a:hover {
 
 
 h1 {
-    padding: 6px 15px;
     margin: 0px;
 }
 
 .sections {
-    margin-top: 50px;
+    height: 100vh;
 }
 
 .anchor {
@@ -72,7 +102,8 @@ h1 {
 }
 
 section {
-    height: 500px;
+    height: 50%;
+    margin: 0px;
 }
 
 .left1 {
@@ -105,3 +136,16 @@ section {
 }
 
 
+.side-links {
+    height: 100vh;
+    position: relative;
+    background-color: #ffa955;
+}
+
+#avatar {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 50%;
+    width: 150px;
+}

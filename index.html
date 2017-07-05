@@ -1,51 +1,43 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Layout</title>
     <link type="text/css" href="style.css" rel="stylesheet">
     <link type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-   <header>
-    <nav class="navbar-default navbar-fixed-top" id="navbar">
-        <ul class="nav navbar-nav" id="nav-links">
-           <div id="nav-text">
-                <li id="contact"><a href="#section4">Contact Me</a></li>
-                <li><a href="#section3">Projects</a></li>
-                <li><a href="#section2">Skills</a></li>
-                <li><a href="#section1">About</a></li>
-           </div>
-            
-        </ul>
-    </nav>
-    </header>
 
-    <div class="sections">
-        <section id="section1">
-           <div class="left1">
-               <h1>About</h1>
-           </div>
-           <div class="right1"></div>
-        </section>
-        <section id="section2">
-            <div class="left2"></div>
-            <div class="right2">
-                <h1>Skills</h1>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+           
+            <div class="col-sm-3 side-links">
+                <img src="self port.jpg" id="avatar" alt="" height="" width="">
+                <h2>Franklin <br><span class="last-name-style">Floresca</span></h2>
+                <ul id="nav-links">
+                    <li id="about">About</li>
+                    <li id="skills">Skills</li>
+                    <li id="projects">Projects</li>
+                    <li id="contact">Contact Me</li>
+                </ul>
             </div>
-        </section>
-        <section id="section3">
-            <div class="left1">
-                <h1>Projects</h1>
+            
+            <div class="col-sm-9 sections">
+                <section id="section1">
+                    <div class="left1">
+                    </div>
+                    <div class="right1"></div>
+                </section>
+                <section id="section2">
+                    <div class="left2"></div>
+                    <div class="right2">
+                    </div>
+                </section>
             </div>
-            <div class="right1"></div>
-        </section>
-        <section id="section4">
-            <div class="left2"></div>
-            <div class="right2">
-                <h1>Contact Me</h1>
-            </div>
-        </section>
+        </div>
     </div>
+
 </body>
+
 </html>
