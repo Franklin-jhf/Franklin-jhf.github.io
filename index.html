@@ -1,27 +1,32 @@
 <!doctype html>
 
 
-<html ng-app="mittens">
+<html ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Layout</title>
     <link type="text/css" href="style.css" rel="stylesheet">
-    <link type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="bootstrap.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="angular.min.js"></script>
+    <script defer type="text/javascript" src="app.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" ng-controller="ResizeController">
            
             <div class="col-sm-2 side-links">
                 <img src="self port.jpg" id="avatar" alt="" height="" width="">
                 <h2>Franklin <br><span class="last-name-style">Floresca</span></h2>
                 <ul id="nav-links">
-                    <li id="about">About</li>
+                    <li ng-click="expandGreen();">About</li>
                     <li id="skills">Skills</li>
                     <li id="projects">Projects</li>
-                    
                 </ul>
+
+                <div>
+                    
+                </div>
 
                 <div class="bottom-contact">
                     <p id="contact">Contact Me</p>
@@ -31,7 +36,7 @@
             
             <div class="col-sm-10 sections">
                 <section id="section1">
-                    <div class="left1">
+                    <div class="left1" ng-class="topLeft">
                     </div>
                     <div class="right1"></div>
                 </section>

@@ -9,6 +9,12 @@ body {
 
 /* body */
 
+.side-links {
+    height: 100vh;
+    position: relative;
+    background-color: #696464;
+}
+
 #nav-links {
     display: block;
     width: 100%;
@@ -18,11 +24,6 @@ body {
     margin-top: 50px;
 }
 
-.side-links {
-    height: 100vh;
-    position: relative;
-    background-color: #696464;
-}
 
 div h2 {
     color: white;
@@ -47,12 +48,12 @@ li {
 
 .bottom-contact {
     position:absolute;
-    bottom: 3vh;
+    bottom: 2vh;
     width: 100%;
 }
 
 #contact {
-    font-size: 20px;
+    font-size: 24px;
     margin: auto;
     display:block;
     background-color: #ff8582;
@@ -120,6 +121,12 @@ section {
     background-color: aquamarine;
     height: 100%;
     width: 50%;
+}
+
+.left1Expand {
+    background-color: aquamarine;
+    height: 75vh;
+    width: 75vw;
 }
 
 .right1 {
