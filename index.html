@@ -5,10 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Layout</title>
-    <link type="text/css" href="style.css" rel="stylesheet">
-    <link type="text/css" href="bootstrap.min.css" rel="stylesheet">
-    <script defer type="text/javascript" src="angular.min.js"></script>
-    <script defer type="text/javascript" src="app.js"></script>
+    <link type="text/css" href="./style.css" rel="stylesheet">
+    <!-- <link type="text/css" href="./welcomestyle.css" rel="stylesheet"> -->
+    <link type="text/css" href="./bootstrap.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="./angular.min.js"></script>
+    <script defer type="text/javascript" src="./app.js"></script>
 </head>
 
 <body>
@@ -19,9 +20,9 @@
                 <img src="self port.jpg" id="avatar" alt="" height="" width="">
                 <h2>Franklin <br><span class="last-name-style">Floresca</span></h2>
                 <ul id="nav-links">
-                    <li ng-click="expandGreen();">About</li>
-                    <li id="skills">Skills</li>
-                    <li id="projects">Projects</li>
+                    <li ng-click="expandLeft1()">About</li>
+                    <li ng-click="expandRight1()">Skills</li>
+                    <li ng-click="expandLeft2()">Projects</li>
                 </ul>
 
                 <div>
@@ -29,21 +30,55 @@
                 </div>
 
                 <div class="bottom-contact">
-                    <p id="contact">Contact Me</p>
+                    <p ng-click="expandRight2()" id="contact">Contact Me</p>
                 </div>
 
             </div>
             
             <div class="col-sm-10 sections">
-                <section id="section1">
-                    <div class="left1" ng-class="topLeft">
+                <!-- <div class="container" ng-class="welcome">
+                    <div class="name-containers" ng-click="reset()">
+                        <div class="first-name">
+                            <h1 class="name">Franklin</h1>
+                        </div>
+                        <div class="first-name">
+                            <h1 class="name">Franklin</h1>
+                        </div>
+                        <div class="second-name">
+                            <h1 class="name">Floresca</h1>
+                        </div>
+                        <div class="second-name">
+                            <h1 class="name">Floresca</h1>
+                        </div>
                     </div>
-                    <div class="right1"></div>
+                    <div class="cube" >
+                        <div class="side back">
+                            <h1 class="plus">+</h1>
+                        </div>
+                        <div class="side left">
+                            <h1 class="plus">+</h1>
+                        </div>
+                        <div class="side right">
+                            <h1 class="plus">+</h1>
+                        </div>
+                        <div class="side top">
+                            <h1 class="plus">+</h1>
+                        </div>
+                        <div class="side bottom">
+                            <h1 class="plus">+</h1>
+                        </div>
+                        <div class="side front">
+                            <h1 class="plus">+</h1>
+                        </div>
+                    </div>
+                </div> -->
+                <section ng-class="section1">
+                    <div ng-class="topLeft"></div>
+                    <div ng-class="topRight"></div>
                 </section>
-                <section id="section2">
-                    <div class="left2"></div>
-                    <div class="right2">
-                    </div>
+                <section ng-class="section2">
+                    <div ng-class="botLeft"></div>
+                    <div ng-class="botRight"></div>
                 </section>
             </div>
         </div>

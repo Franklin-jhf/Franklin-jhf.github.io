@@ -96,9 +96,6 @@ h1 {
     margin: 0px;
 }
 
-.sections {
-    height: 100vh;
-}
 
 .anchor {
     display: block;
@@ -111,44 +108,77 @@ h1 {
     visibility: hidden;
 }
 
-section {
-    height: 50%;
-    margin: 0px;
+.sections {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.section1{
+    display: flex;
+    flex: 1;
+}
+
+.section2{
+    display: flex;
+    flex: 1;
+}
+
+.section1Expand{
+    display: flex;
+    flex: 5;
+}
+
+.section2Expand{
+    display: flex;
+    flex: 5;
 }
 
 .left1 {
-    float: left;
+    flex-grow: 1;
     background-color: aquamarine;
     height: 100%;
-    width: 50%;
 }
 
 .left1Expand {
     background-color: aquamarine;
-    height: 75vh;
-    width: 75vw;
+    flex-grow: 7;
+    height: 100%;
 }
 
 .right1 {
-    float: right;
+    flex-grow: 1;
     background-color: #50edff;
     height: 100%;
-    width: 50%;
+}
+.right1Expand {
+    background-color: #50edff;
+    flex-grow: 7;
+    height: 100%;
 }
 
 .left2 {
-    float: left;
+    flex-grow: 1;
     background-color: #fffb7d;
     height: 100%;
-    width: 50%;
+}
+
+.left2Expand {
+    flex-grow: 7;
+    background-color: #fffb7d;
+    height: 100%;
 }
 
 .right2 {
-    float: right;
+    flex-grow: 1;
     background-color: #ff8582;
     height: 100%;
-    width: 50%;
-    text-align: right;
+}
+
+.right2Expand {
+    flex-grow: 7;
+    background-color: #ff8582;
+    height: 100%;
 }
 
 #avatar {
