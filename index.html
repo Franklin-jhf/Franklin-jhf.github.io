@@ -15,6 +15,10 @@
 <body>
     <div class="container-fluid">
         <div class="row" ng-controller="ResizeController">
+            <div ng-hide="showSideBar" class="welcome" class="wrapper">
+                <div ng-click="showSideBar = !showSideBar; reset()" id="world"></div>
+                <span></span>
+            </div>
            
             <div ng-show="showSideBar" class="col-sm-2 side-links">
 <!--                 <img src="self port.jpg" id="avatar" alt="" height="" width="">
@@ -35,11 +39,7 @@
 
             </div>
             
-            <div class="sections">
-                <div ng-hide="showSideBar" ng-class="welcome" class="wrapper">
-                    <div ng-click="showSideBar = !showSideBar" ></div>
-                    <span></span>
-                </div>
+            <div class="sections col-sm-10">
                 <section ng-class="section1">
                     <div ng-class="topLeft"></div>
                     <div ng-class="topRight"></div>

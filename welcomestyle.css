@@ -13,7 +13,25 @@ html {
 
 
 
-.sections {
+/*.sections {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-smooth: auto;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #444;
+  background-image: url("https://static.pexels.com/photos/176851/pexels-photo-176851.jpeg");
+  background-position: center center;
+  background-size: cover;
+}*/
+
+.welcome {
   position: relative;
   display: flex;
   align-items: center;
@@ -39,7 +57,7 @@ html {
   width: 250px;
   height: 250px;
 }
-.wrapper div {
+#world {
   position: relative;
   display: block;
   width: 150px;

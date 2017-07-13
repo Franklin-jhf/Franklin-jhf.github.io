@@ -17,6 +17,7 @@ angular.module('app', [])
 
     $scope.expandLeft1= function() {
         if ($scope.topLeft === "left1") {
+            $scope.reset();
             $scope.topLeft = "left1Expand";
             $scope.section1 = "section1Expand"
         } else {
@@ -27,6 +28,7 @@ angular.module('app', [])
 
     $scope.expandRight1 = function() {
         if ($scope.topRight === "right1") {
+            $scope.reset();
             $scope.topRight = "right1Expand";
             $scope.section1 = "section1Expand"
         } else {
@@ -37,6 +39,7 @@ angular.module('app', [])
 
     $scope.expandLeft2= function() {
         if ($scope.botLeft === "left2") {
+            $scope.reset();
             $scope.botLeft = "left2Expand";
             $scope.section2 = "section2Expand"
         } else {
@@ -47,6 +50,7 @@ angular.module('app', [])
 
     $scope.expandRight2 = function() {
         if ($scope.botRight === "right2") {
+            $scope.reset();
             $scope.botRight = "right2Expand";
             $scope.section2 = "section2Expand"
         } else {
