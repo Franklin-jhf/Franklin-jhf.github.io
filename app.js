@@ -2,17 +2,17 @@ angular.module('app', [])
 
 .controller('ResizeController', function($scope) {
     
-    // $scope.welcome = "welcome";
+
+    $scope.welcome = "wrapper";
 
     $scope.reset = function() {
-    }
-        $scope.welcome = "";
         $scope.section1 = "section1";
         $scope.topLeft = "left1";
         $scope.topRight = "right1";
         $scope.section2 = "section2";
         $scope.botLeft = "left2";
         $scope.botRight = "right2";
+    }
 
 
     $scope.expandLeft1= function() {
