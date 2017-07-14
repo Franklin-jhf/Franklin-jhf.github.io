@@ -18,12 +18,11 @@
             <div ng-hide="showSideBar" class="welcome" class="wrapper">
                 <div class="welcome-heading">
                     <p id="welcome-name">Franklin Floresca</p>
-                    <p id="welcome-portfolio">Portfolio</p>
+                    <p id="welcome-portfolio">My only portfolio<span style="font-size: 9px"> is</span>in the world</p>
                 </div>
                 
                 <p id="quote"><em>"The world only exists in your eyes. You can make it as big or as small as you want."</em> ~ F. Scott Fitzgerald</p>
-                
-                <div ng-click="showSideBar = !showSideBar; reset()" id="world"></div>
+                <div id="earth" ng-click="showSideBar = !showSideBar; reset()"></div>
                 <span></span>
             </div>
            
@@ -46,7 +45,7 @@
 
             </div>
             
-            <div class="sections col-sm-10">
+            <div ng-show="showSideBar" class="sections col-sm-10">
                 <section ng-class="section1">
                     <div ng-class="topLeft"><p ng-show="contactme" class="heading">Contact Me</p></div>
                     <div ng-class="topRight"><p ng-show="projects" class="heading">Projects</p></div>

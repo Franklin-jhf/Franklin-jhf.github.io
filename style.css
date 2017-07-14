@@ -223,7 +223,7 @@ section div .heading{
 }
 
 .welcome-heading {
-    transform: translateY(-28vh);
+    transform: translateY(-32vh);
     position: absolute;
     text-align: center;
     display: inline-block;
@@ -233,7 +233,7 @@ section div .heading{
     font-size: 1.2em;
     color: white;
     position: absolute;
-    transform: translateY(42vh);
+    transform: translateY(37vh);
 /*    width: 30vw;*/
 }
 
