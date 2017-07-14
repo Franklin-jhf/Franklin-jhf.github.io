@@ -16,6 +16,13 @@
     <div class="container-fluid">
         <div class="row" ng-controller="ResizeController">
             <div ng-hide="showSideBar" class="welcome" class="wrapper">
+                <div class="welcome-heading">
+                    <p id="welcome-name">Franklin Floresca</p>
+                    <p id="welcome-portfolio">Portfolio</p>
+                </div>
+                
+                <p id="quote"><em>"The world only exists in your eyes. You can make it as big or as small as you want."</em> ~ F. Scott Fitzgerald</p>
+                
                 <div ng-click="showSideBar = !showSideBar; reset()" id="world"></div>
                 <span></span>
             </div>
@@ -41,12 +48,12 @@
             
             <div class="sections col-sm-10">
                 <section ng-class="section1">
-                    <div ng-class="topLeft"></div>
-                    <div ng-class="topRight"></div>
+                    <div ng-class="topLeft"><p ng-show="contactme" class="heading">Contact Me</p></div>
+                    <div ng-class="topRight"><p ng-show="projects" class="heading">Projects</p></div>
                 </section>
                 <section ng-class="section2">
-                    <div ng-class="botLeft"></div>
-                    <div ng-class="botRight"></div>
+                    <div ng-class="botLeft"><p ng-show="skills" class="heading">Skills</p></div>
+                    <div ng-class="botRight"><p ng-show="about" class="heading">About Me</p></div>
                 </section>
             </div>
         </div>

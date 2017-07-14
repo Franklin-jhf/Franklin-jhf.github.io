@@ -117,68 +117,80 @@ h1 {
 .section1{
     display: flex;
     flex: 1;
+    transition: all 1.0s ease-in-out;
 }
 
 .section2{
     display: flex;
     flex: 1;
+    transition: all 1.0s ease-in-out;
 }
 
 .section1Expand{
     display: flex;
-    flex: 5;
+    flex: 7;
+    transition: all 1.0s ease-in-out;
 }
 
 .section2Expand{
     display: flex;
-    flex: 5;
+    flex: 7;
+    transition: all 1.0s ease-in-out;
 }
 
 .left1 {
     flex-grow: 1;
     background-color: aquamarine;
     height: 100%;
+    transition: all 1.0s ease-in-out;
 }
 
 .left1Expand {
     background-color: aquamarine;
     flex-grow: 7;
     height: 100%;
+    transition: all 1.0s ease-in-out;
 }
 
 .right1 {
     flex-grow: 1;
     background-color: #50edff;
     height: 100%;
+    transition: all 1.0s ease-in-out;
 }
 .right1Expand {
     background-color: #50edff;
     flex-grow: 7;
     height: 100%;
+    transition: all 1.0s ease-in-out;
 }
 
 .left2 {
     flex-grow: 1;
     background-color: #fffb7d;
     height: 100%;
+    transition: all 1.0s ease-in-out;
 }
 
 .left2Expand {
     flex-grow: 7;
     background-color: #fffb7d;
     height: 100%;
+    transition: all 1.0s ease-in-out;
 }
 
 .right2 {
     flex-grow: 1;
     background-color: #ff8582;
     height: 100%;
+    transition: all 1.0s ease-in-out;
 }
 
 .right2Expand {
     flex-grow: 7;
     background-color: #ff8582;
     height: 100%;
+    transition: all 1.0s ease-in-out;
 }
 
 #avatar {
@@ -188,3 +200,55 @@ h1 {
     border-radius: 50%;
     width: 150px;
 }
+
+section div .heading{
+    color: white;
+    text-shadow: 2px 2px 8px grey;
+    font-size: 80px;
+    transform: translateX(25%);
+}
+
+#welcome-name {
+    font-size: 10rem;
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 10px 80px grey;
+    line-height: 4rem;
+}
+
+#welcome-portfolio {
+    font-size: 2.8em;
+    color: white;
+    float: right;
+}
+
+.welcome-heading {
+    transform: translateY(-28vh);
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+
+#quote {
+    font-size: 1.2em;
+    color: white;
+    position: absolute;
+    transform: translateY(42vh);
+/*    width: 30vw;*/
+}
+
+
+/*.welcome p {
+    font-size: 4em;
+    color: white;
+    position: absolute;
+    transform: translateY(-30vh);
+}*/
+
+
+
+
+
+
+
+

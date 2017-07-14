@@ -63,7 +63,7 @@ html {
   width: 150px;
   height: 150px;
   background-color: #217dbb;
-  background-image: url("http://mentalsociety.com/wp-content/themes/twentyseventeen/assets/images/world-map-terrain.png");
+  background-image: url("https://t4.ftcdn.net/jpg/00/08/47/31/240_F_8473147_ijawnZyiWZyc8FmBPN5GizR7H3WiWEQ4.jpg");
   background-position: 0 0;
   background-repeat: repeat-x;
   background-size: cover;
@@ -72,7 +72,13 @@ html {
   transform: rotate(15deg);
   animation: spin 5s linear infinite;
   z-index: 10;
+  transition: all 1.0s ease-in-out;
 }
+
+#world:hover {
+  transform: scale(3.0);
+}
+
 .wrapper div:before {
   position: absolute;
   content: '';
