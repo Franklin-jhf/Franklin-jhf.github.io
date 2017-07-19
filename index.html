@@ -8,6 +8,7 @@
     <link type="text/css" href="./style.css" rel="stylesheet">
     <link type="text/css" href="./welcomestyle.css" rel="stylesheet">
     <link type="text/css" href="./bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="./navStyle.css" rel="stylesheet">
     <script defer type="text/javascript" src="./angular.min.js"></script>
     <script defer type="text/javascript" src="./app.js"></script>
 </head>
@@ -22,7 +23,7 @@
                 </div>
                 
                 <p id="quote"><em>"The world only exists in your eyes. You can make it as big or as small as you want."</em> ~ F. Scott Fitzgerald</p>
-                <div id="earth" ng-click="showSideBar = !showSideBar; reset()"></div>
+                <div id="earth" ng-click="showSideBar = !showSideBar; reset(); expandLeft1()"></div>
                 <span></span>
             </div>
            
@@ -30,18 +31,13 @@
 <!--                 <img src="self port.jpg" id="avatar" alt="" height="" width="">
  -->                <h2>Franklin <br><span class="last-name-style">Floresca</span></h2>
                 <ul id="nav-links">
-                    <li ng-click="expandLeft1()">About</li>
-                    <li ng-click="expandRight1()">Skills</li>
-                    <li ng-click="expandLeft2()">Projects</li>
+                    <li ng-click="expandLeft1()"><img src="aboutme-icone.svg">About Me</li>
+                    <li ng-click="expandRight1()"><img src="skill-icon.png" > Skills</li>
+                    <li ng-click="expandLeft2()"><img src="projects-icon.png">Projects</li>
+                    <li ng-click="expandRight2()"><img src="contactme-icon.png">Contact Me</li>
                 </ul>
 
-                <div>
-                    
-                </div>
 
-                <div class="bottom-contact">
-                    <p ng-click="expandRight2()" id="contact">Contact Me</p>
-                </div>
 
             </div>
             

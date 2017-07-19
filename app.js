@@ -6,15 +6,15 @@ angular.module('app', [])
     $scope.welcome = "wrapper";
 
     $scope.reset = function() {
-        $scope.section1 = "section1";
-        $scope.topLeft = "left1";
-        $scope.topRight = "right1";
-        $scope.section2 = "section2";
-        $scope.botLeft = "left2";
-        $scope.botRight = "right2";
-        $scope.about = false;
-        $scope.skills = false;
-        $scope.projects = false;
+        $scope.section1  = "section1";
+        $scope.topLeft   = "left1";
+        $scope.topRight  = "right1";
+        $scope.section2  = "section2";
+        $scope.botLeft   = "left2";
+        $scope.botRight  = "right2";
+        $scope.about     = false;
+        $scope.skills    = false;
+        $scope.projects  = false;
         $scope.contactme = false;
     }
 
@@ -22,13 +22,13 @@ angular.module('app', [])
     $scope.expandLeft1= function() {
         if ($scope.topLeft === "left1") {
             $scope.reset();
-            $scope.topLeft = "left1Expand";
-            $scope.section1 = "section1Expand"
-            $scope.about = true;
+        $scope.topLeft     = "left1Expand";
+        $scope.section1    = "section1Expand"
+        $scope.about       = true;
         } else {
-            $scope.topLeft = "left1";
-            $scope.section1 = "section1"
-            $scope.about = false;
+        $scope.topLeft     = "left1";
+        $scope.section1    = "section1"
+        $scope.about       = false;
         }
     }
 
